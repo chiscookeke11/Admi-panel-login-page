@@ -10,7 +10,7 @@ function checkLogin(event) {
 
     if (username.length < 1 || password.length < 1 ) {
         report.innerHTML = "Please Input Your Login Details";
-    } else if (username === validUsername && password === validPassword) {
+    } else if (username == validUsername && password === validPassword) {
         window.location.href = 'admin panel.htm';
     } else {
         report.innerHTML = "Invalid Login Details";

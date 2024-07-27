@@ -47,7 +47,7 @@ section{
 .sample-box{
 	width: 100px;
 	height: 100px;
-	transform: translateY(700px);
+	transform: translateY(1000px);
 	animation: moveup 10s linear infinite;
 }
 .semi-circle{
