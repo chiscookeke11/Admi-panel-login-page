@@ -86,17 +86,28 @@
 
 			<div class="thebox">
 				
-				<form action="">
+				<form action="" id="loginForm" >
 					<div class="wave-img">
 						👋
 					</div>
 					<h2>Welcome To <span>Admin Panel</span></h2>
+
 					<div class="inputs">
-						<div class="input-text"><p>Enter password</p></div>
-						<input type="email">
+
+						<div class="input-text">
+						<input type="text" required="required" id="email-text">
+						<span>Email</span>
 					</div>
-					<span class="p"><a href="#">Forgot Password?</a></span>
-					<button type="submit" class="login-btn">Login</button>
+
+					 <div class="input-text">
+						<input type="Password" required="required" id="Password-text">
+						<span>Password</span>
+					</div> 
+					<span class="forgot"><a href="#">Forgot Password?</a></span>
+
+					</div>
+					<button class="login-btn" id="submit-btn" onclick="checkLogin(event)">submit</button>
+					<p id="report"></p>
 				</form>
 
 				
@@ -110,4 +121,5 @@
 
 	</section>
 </body>
+<script src="script.js"></script>
 </html>
